@@ -48,9 +48,14 @@ nav a {
   font-size: 13px;
 }
 
+#nav .nav-link:hover {
+  color: var(--color-button);
+  transition: 0.7s;
+}
+
 #main {
   background-color: var(--color-background);
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -70,4 +75,222 @@ nav a {
   color: #282938;
   font-family: "popins" sans-serif;
   font-weight: 500;
+}
+
+#footer {
+  background-color: #eef4fa;
+  width: 100%;
+  display: flex;
+
+  justify-content: space-between;
+}
+
+#footer .title1 {
+  font-family: "poppins" sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  margin-top: 40px;
+}
+
+/* #footer .grid{ht: 20px;
+}
+  margin-rig */
+
+#footer .title2 {
+  font-family: "poppins" sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  margin-top: 30px;
+}
+
+#footer .caption2 {
+  font-weight: 400;
+  color: #282938;
+  font-size: 10px;
+}
+
+#card .container-fluid {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+}
+
+#card .title2 {
+  justify-content: center;
+  text-align: center;
+  font-family: "poppins" sans-serif;
+  margin-left: 408px;
+  margin-top: 102px;
+  margin-bottom: 62px;
+}
+
+#card .card {
+  background-color: #f4f6fc;
+  border: 0;
+  border-radius: 0;
+  width: 320px;
+  height: 240px;
+  margin-left: 30px;
+}
+
+#card h3 {
+  font-family: "poppins" sans-serif;
+  font-weight: 400 bold;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#card .caption {
+  font-family: "poppins" sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 20px;
+  color: #282938;
+}
+
+#about {
+  margin-bottom: 30px;
+  width: 100%;
+  height: 100%;
+}
+
+#about img {
+  width: 475px;
+  height: 290px;
+  margin-left: 60px;
+}
+
+#about span {
+  color: #232536;
+  font-family: "poppins" sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#about {
+  margin-bottom: 100px;
+}
+
+#about .caption {
+  color: #282938;
+  font-family: "poppins" sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+#kursus .drop {
+  border-radius: solid #fff;
+  border: none;
+  color: #282938;
+  font-size: ;
+  font-family: "poppins" sans-serif;
+  font-weight: 500;
+}
+
+#kursus .btn-lihat {
+  height: 46px;
+  border-radius: 5px;
+  color: #282938;
+  background-color: var(--color-button);
+  width: 160px;
+  font-family: "poppins" sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  margin-left: 10px;
+  border: none;
+  box-shadow: #232536 0px 0px 0.2px 0px;
+}
+
+#kursus .dropdown {
+  margin-left: 70px;
+}
+
+#kursus h2 {
+  font-family: "poppins" sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+#kursus .card {
+  width: 336px;
+  height: 418px;
+  top: 62px;
+  border: none;
+}
+
+#kursus .card img {
+  width: 336px;
+  height: 236px;
+  position: relative;
+  z-index: 1;
+  margin: 5px;
+}
+
+#kursus .rating {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  padding-left: 5px;
+  padding-right: 5px;
+  position: relative;
+  left: 284px;
+  z-index: 2;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  align-items: center;
+  bottom: 15px;
+}
+
+#kursus h3 {
+  font-family: "poppins" sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  text-align: start;
+  margin-left: 10px;
+}
+
+#kursus .caption {
+  font-family: "poppins" sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: start;
+  margin-left: 10px;
+  color: #282938;
+}
+
+#swipe {
+  background-color: #eef4fa;
+  margin-top: 100px;
+  height: 300px;
+}
+
+#swipe h2 {
+  font-family: "poppins" sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  margin-top: 40px;
+}
+
+#swipe .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+#swipe .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#swipe .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
