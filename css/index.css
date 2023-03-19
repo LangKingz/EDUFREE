@@ -5,6 +5,10 @@
   font-family: "poppins" sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --color-background: #1c1e53;
   --color-button: #fcd980;
@@ -50,7 +54,9 @@ nav a {
 
 #nav .nav-link:hover {
   color: var(--color-button);
-  transition: 0.7s;
+
+  transition: 0.4s;
+  transform: perspective(3px) scale(1.1);
 }
 
 #main {
@@ -68,6 +74,7 @@ nav a {
   width: 175px;
   height: 48px;
   color: var(--color-text);
+  border: none;
 }
 
 #main .tn {
@@ -150,6 +157,7 @@ nav a {
   font-size: 13px;
   margin-top: 20px;
   color: #282938;
+  opacity: 0.7;
 }
 
 #about {
@@ -169,6 +177,7 @@ nav a {
   font-family: "poppins" sans-serif;
   font-weight: 600;
   font-size: 16px;
+  opacity: 0.7;
 }
 
 #about {
@@ -186,7 +195,7 @@ nav a {
   border-radius: solid #fff;
   border: none;
   color: #282938;
-  font-size: ;
+
   font-family: "poppins" sans-serif;
   font-weight: 500;
 }
@@ -277,12 +286,14 @@ nav a {
 #swipe .swiper {
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 #swipe .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: #eef4fa;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -293,4 +304,122 @@ nav a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+#accord {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#accord p {
+  font-family: "poppins" sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #282938;
+}
+
+#accord .accordion {
+  width: 100%;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  text-align: start;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.4s;
+  background-color: var(--color-text);
+}
+
+#accord .active,
+.accordion:hover {
+  background-color: #fff;
+}
+
+#accord .accordion:after {
+  content: "\002B";
+  color: #000;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+#accord .active:after {
+  content: "\2715";
+}
+
+#accord .panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin-left: 25px;
+}
+
+/* #accord .container {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 18px 18px 0 18px;
+  margin-bottom: 10px;
+} */
+
+/* #accord .row {
+  margin-left: 100px;
+} */
+
+#img img {
+  width: 100%;
+  height: 70%;
+  margin-bottom: 80px;
+}
+
+
+#blog .card {
+  width: 336px;
+  height: 418px;
+  top: 62px;
+  border: none;
+}
+
+#blog .card img {
+  width: 336px;
+  height: 236px;
+  position: relative;
+  z-index: 1;
+  margin: 5px;
+}
+#blog span {
+  font-size: 10px;
+  font-family: 'poppins' sans-serif;
+  font-weight: 400;
+  opacity: 0.7;
+  margin-top: 20px;
+  margin-bottom: 20px;
+} 
+
+#blog p{
+  font-size: 12px;
+  color: #282938;
+  opacity: 0.7;
+
+}
+
+#blog button {
+  border: none ;
+  color: #000;
+  font-size: 13px;
+  font-family: 'poppins' sans-serif;
+  background-color: white;
+  font-weight: 500;
+}
+
+#blog .container-fluid {
+  margin-bottom: 200px;
+}
+
+
+footer {
+  background-color: var(--color-background);
 }
