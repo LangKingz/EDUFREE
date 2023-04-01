@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 0 ;
   padding: 0;
   box-sizing: border-box;
   font-family: "poppins" sans-serif;
@@ -108,6 +108,7 @@ nav a {
   font-weight: 700;
   font-size: 22px;
   margin-top: 30px;
+  left: 30px;
 }
 
 #footer .caption2 {
@@ -169,7 +170,7 @@ nav a {
 #about img {
   width: 475px;
   height: 290px;
-  margin-left: 60px;
+  margin-left: 30px;
 }
 
 #about span {
@@ -234,7 +235,7 @@ nav a {
 #kursus .card img {
   width: 336px;
   height: 236px;
-  position: relative;
+  
   z-index: 1;
   margin: 5px;
 }
@@ -476,3 +477,68 @@ footer .email p ,.telephone p{
   margin-left: 10px;
 }
 
+
+@media only screen and (max-width: 767px) {
+  /* CSS code for mobile layout */
+  *{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  #main img{
+    width: 100%;
+    height: 80%;
+    margin-top: 10px;
+    
+  }
+
+  #main button{
+    margin-top: 0px;
+    top: 10px;
+    z-index: 2;
+   
+  }
+  #main h1{
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  #main p{
+    
+  }
+
+  #kursus img {
+    justify-content: end;
+    position: relative;
+    margin-left: 30px;
+    width: 100%;
+  }
+  .container{
+    width: 90%;
+
+  }
+
+  .container-fluid {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  #about img{
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  #card .title2{
+    margin-left: 40px;
+    text-align: left;
+    font-size: 24px;
+  }
+
+}

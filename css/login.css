@@ -30,21 +30,21 @@ header button:hover {
   width: 590px;
   height: 590px;
   top: 7px;
-  left: 30px;
+  left: 28px;
 }
 
 #main .overlay {
-  position: absolute;
-  top: 58px;
+  position: relative;
+  bottom: 624px;
   background-color: #1c1e53;
   mix-blend-mode: multiply;
-  width: 590px;
+  width: 568px;
   height: 591px;
   color: #ffffff;
   opacity: 0.6;
-  z-index: 1;
+  z-index: 2;
   margin-top: 10px;
-  left: 52px;
+  left: 38px;
 }
 
 #main .text {
@@ -138,4 +138,35 @@ header button:hover {
   font-weight: 300;
   font-size: 15px;
   color: #f4f6fc;
+}
+
+@media only screen and (max-width: 767px) {
+  #main .layer .btn {
+    width: 350px;
+  }
+
+  #main input {
+    width: 330px;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  .container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  * {
+    margin: 0;
+  }
+  #main input {
+    width: 270px;
+  }
+
+  #main .btn {
+    width: 270px;
+  }
 }
